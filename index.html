@@ -1,574 +1,960 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hexo">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta property="og:type" content="article">
-<meta property="og:title" content="note test">
-<meta property="og:url" content="https://zoelin2022.github.io/2022/08/06/note-test/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-06T06:39:53.000Z">
-<meta property="article:modified_time" content="2022-08-06T06:39:53.287Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
 
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
 
-<link rel="icon" href="/img/avatar.jpg">
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
 
-<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+    
 
-<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
-<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
-<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="/js/titleTip.js?v=1.1.0" ></script>
+    
+    <link rel="next" href="guide/產品概述/README.md" />
+    
+    
 
-<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
-
-<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
-
-
-
-<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
-
-<script src="/js/iconfont.js?v=1.1.0" ></script>
-
-<meta name="generator" content="Hexo 6.2.0"></head>
-<div style="display: none">
-  <input class="theme_disqus_on" value="false">
-  <input class="theme_preload_comment" value="">
-  <input class="theme_blog_path" value="">
-  <input id="theme_shortcut" value="true" />
-  <input id="theme_highlight_on" value="true" />
-  <input id="theme_code_copy" value="true" />
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
+            
+                <nav role="navigation">
+                
 
 
-<body>
-<aside class="nav mobile">
-    <div class="nav-left">
-        <a href="/"
-   class="avatar_target">
-    <img class="avatar"
-         src="/img/avatar.jpg"/>
-</a>
-<div class="author">
-    <span>John Doe</span>
-</div>
+<ul class="summary">
+    
+    
 
-<div class="icon">
     
-        
-            <a title="rss"
-               href="/atom.xml"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-rss"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="github"
-               href="https://github.com/yelog"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-github"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="facebook"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
-        
-    
-        
-            <a title="instagram"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-instagram"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="reddit"
-               href="https://www.reddit.com/user/yelog/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-reddit"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="weibo"
-               href="http://weibo.com/u/2307534817"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="jianshu"
-               href="https://www.jianshu.com/u/ff56736de7cf"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-jianshu"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="zhihu"
-               href="https://www.zhihu.com/people/jaytp/activities"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
-        
-            <a title="oschina"
-               href="https://my.oschina.net/yelog"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-oschina"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
-        
-            <a title="email"
-               href="mailto:jaytp@qq.com"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-email"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="qq"
-               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-qq"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="kugou"
-               href="https://www.kugou.com/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-kugou"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="neteasemusic"
-               href="https://music.163.com/#/user/home?id=88151013"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-neteasemusic"></use>
-                    </svg>
-                
-            </a>
-        
-    
-</div>
 
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="guide/產品概述/README.md">
+            
+                <span>
+            
+                    
+                    產品概述
+            
+                </a>
+            
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="guide/產品概述/產品簡介.html">
+            
+                <a href="guide/產品概述/產品簡介.html">
+            
+                    
+                    產品簡介
+            
+                </a>
+            
 
-<ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="guide/產品概述/主要功能和特色.html">
+            
+                <a href="guide/產品概述/主要功能和特色.html">
+            
+                    
+                    主要功能和特色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="guide/產品概述/產品架構圖.html">
+            
+                <a href="guide/產品概述/產品架構圖.html">
+            
+                    
+                    產品架構圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="guide/入門指南/README.md">
+            
+                <span>
+            
+                    
+                    入門指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="guide/入門指南/系統需求.html">
+            
+                <a href="guide/入門指南/系統需求.html">
+            
+                    
+                    系統需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="guide/入門指南/硬體配置.html">
+            
+                <a href="guide/入門指南/硬體配置.html">
+            
+                    
+                    硬體配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="guide/入門指南/軟體配置.html">
+            
+                <a href="guide/入門指南/軟體配置.html">
+            
+                    
+                    軟體配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="guide/入門指南/下載與安裝步驟.html">
+            
+                <a href="guide/入門指南/下載與安裝步驟.html">
+            
+                    
+                    下載與安裝步驟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="guide/入門指南/初始配置指南.html">
+            
+                <a href="guide/入門指南/初始配置指南.html">
+            
+                    
+                    初始配置指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="guide/入門指南/登入系統.html">
+            
+                <a href="guide/入門指南/登入系統.html">
+            
+                    
+                    登入系統
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="guide/使用指南/README.md">
+            
+                <span>
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="guide/使用指南/系統概覽.html">
+            
+                <a href="guide/使用指南/系統概覽.html">
+            
+                    
+                    系統概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="guide/使用指南/系統關聯分析/README.md">
+            
+                <span>
+            
+                    
+                    系統關聯分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="guide/使用指南/系統關聯分析/Sysload.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Sysload.html">
+            
+                    
+                    Sysload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="guide/使用指南/系統關聯分析/Diskload.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Diskload.html">
+            
+                    
+                    Diskload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="guide/使用指南/系統關聯分析/Netload.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Netload.html">
+            
+                    
+                    Netload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="guide/使用指南/系統關聯分析/Memory.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Memory.html">
+            
+                    
+                    Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="guide/使用指南/系統關聯分析/MultiCPU.html">
+            
+                <a href="guide/使用指南/系統關聯分析/MultiCPU.html">
+            
+                    
+                    MultiCPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="guide/使用指南/系統關聯分析/Filesystem.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Filesystem.html">
+            
+                    
+                    Filesystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="guide/使用指南/系統關聯分析/Process.html">
+            
+                <a href="guide/使用指南/系統關聯分析/Process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="guide/使用指南/指標自選區/README.md">
+            
+                <span>
+            
+                    
+                    指標自選區
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="guide/使用指南/指標自選區/RawData.html">
+            
+                <a href="guide/使用指南/指標自選區/RawData.html">
+            
+                    
+                    RawData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="guide/使用指南/指標自選區/定義KPI指標.html">
+            
+                <a href="guide/使用指南/指標自選區/定義KPI指標.html">
+            
+                    
+                    定義 KPI 指標
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="guide/使用指南/指標自選區/定義儀表板.html">
+            
+                <a href="guide/使用指南/指標自選區/定義儀表板.html">
+            
+                    
+                    定義儀表板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="guide/告警管理/README.md">
+            
+                <span>
+            
+                    
+                    告警管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="guide/告警管理/當前告警.html">
+            
+                <a href="guide/告警管理/當前告警.html">
+            
+                    
+                    當前告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="guide/告警管理/歷史告警.html">
+            
+                <a href="guide/告警管理/歷史告警.html">
+            
+                    
+                    歷史告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="guide/告警管理/規則列表.html">
+            
+                <a href="guide/告警管理/規則列表.html">
+            
+                    
+                    規則列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="guide/告警管理/通知管道/README.md">
+            
+                <span>
+            
+                    
+                    通知管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="guide/告警管理/通知管道/Teams.html">
+            
+                <a href="guide/告警管理/通知管道/Teams.html">
+            
+                    
+                    Teams
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="guide/告警管理/告警抑制.html">
+            
+                <a href="guide/告警管理/告警抑制.html">
+            
+                    
+                    告警抑制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="guide/告警管理/規則標籤.html">
+            
+                <a href="guide/告警管理/規則標籤.html">
+            
+                    
+                    規則標籤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="guide/基本設定/README.md">
+            
+                <span>
+            
+                    
+                    基本設定
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="guide/基本設定/伺服器群組.html">
+            
+                <a href="guide/基本設定/伺服器群組.html">
+            
+                    
+                    伺服器群組
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="guide/基本設定/選單設定.html">
+            
+                <a href="guide/基本設定/選單設定.html">
+            
+                    
+                    選單設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="guide/基本設定/效能數據上傳.html">
+            
+                <a href="guide/基本設定/效能數據上傳.html">
+            
+                    
+                    效能數據上傳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="guide/基本設定/伺服器標籤.html">
+            
+                <a href="guide/基本設定/伺服器標籤.html">
+            
+                    
+                    伺服器標籤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="guide/管理功能/README.md">
+            
+                <span>
+            
+                    
+                    管理功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="guide/管理功能/管理概覽.html">
+            
+                <a href="guide/管理功能/管理概覽.html">
+            
+                    
+                    管理概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="guide/管理功能/用戶和群組管理.html">
+            
+                <a href="guide/管理功能/用戶和群組管理.html">
+            
+                    
+                    用戶和群組管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="guide/管理功能/備份與還原.html">
+            
+                <a href="guide/管理功能/備份與還原.html">
+            
+                    
+                    備份與還原
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="guide/管理功能/常用CLI命令.html">
+            
+                <a href="guide/管理功能/常用CLI命令.html">
+            
+                    
+                    常用CLI命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="guide/管理功能/日誌存放相關路徑.html">
+            
+                <a href="guide/管理功能/日誌存放相關路徑.html">
+            
+                    
+                    日誌存放相關路徑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="guide/高級功能/README.md">
+            
+                <span>
+            
+                    
+                    高級功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="guide/高級功能/整合Grafana儀表板.html">
+            
+                <a href="guide/高級功能/整合Grafana儀表板.html">
+            
+                    
+                    整合Grafana儀表板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
     <li>
-        <div class="all active" data-rel="All">All
-            
-                <small>(2)</small>
-            
-        </div>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
     </li>
-    
 </ul>
-<div class="left-bottom">
-    <div class="menus">
+
+
+                </nav>
+            
         
-            
-            
-            
     </div>
-    <div>
+
+    <div class="book-body">
         
-            <a class="about  hasFriend  site_url"
-               
-               href="/about">About</a>
-        
-        <a style="width: 50%"
+            <div class="body-inner">
                 
-                                           class="friends">Friends</a>
-        
-    </div>
-</div>
-<input type="hidden" id="yelog_site_posts_number" value="2">
+                    
 
-<div style="display: none">
-    <span id="busuanzi_value_site_uv"></span>
-    <span id="busuanzi_value_site_pv"></span>
-</div>
-
-    </div>
-    <div class="nav-right">
-        <div class="friends-area">
-    <div class="friends-title">
-        Links
-        <i class="iconfont icon-left"></i>
-    </div>
-    <div class="friends-content">
-        <ul>
-            
-            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
-            
-        </ul>
-    </div>
-</div>
-        <div class="title-list">
-    <div class="right-top">
-        <div id="default-panel">
-            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
-            <div class="right-title">All</div>
-            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
-        </div>
-        <div id="search-panel">
-            <i class="iconfont icon-left" data-title="返回"></i>
-            <input id="local-search-input" autocomplete="off"/>
-            <label class="border-line" for="input"></label>
-            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
-            <i class="iconfont icon-tag" data-title="标签"></i>
-        </div>
-        <div id="outline-panel" style="display: none">
-            <div class="right-title">大纲</div>
-            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
-        </div>
-    </div>
-
-    <div class="tags-list">
-    <input id="tag-search" />
-    <div class="tag-wrapper">
-        
-    </div>
-
-</div>
-
+<div class="book-header" role="navigation">
     
-    <nav id="title-list-nav">
-        
-        
-        <a  class="All "
-           href="/2022/08/06/note-test/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="note test">note test</span>
-            <span class="post-date" title="2022-08-06 14:39:53">2022/08/06</span>
-        </a>
-        
-        
-        <a  class="All "
-           href="/2022/08/06/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2022-08-06 14:37:35">2022/08/06</span>
-        </a>
-        
-        <div id="no-item-tips">
 
-        </div>
-    </nav>
-    <div id="outline-list">
-    </div>
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
 </div>
 
-    </div>
-    <div class="hide-list">
-        <div class="semicircle" data-title="切换全屏 快捷键 s">
-            <div class="brackets first"><</div>
-            <div class="brackets">&gt;</div>
-        </div>
-    </div>
-</aside>
-<div id="post" class="index">
-    <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%8F%B6%E8%90%BD%E9%98%81"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
-    
-<style>
-    .left-col .switch-btn,
-    .left-col .switch-area {
-        display: none;
-    }
-    .toc-level-3 i,
-    .toc-level-3 ol {
-        display: none !important;
-    }
-</style>
-</div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阁主（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7522;&#x54C1;&#x64CD;&#x4F5C;&#x624B;&#x518A;">&#x7522;&#x54C1;&#x64CD;&#x4F5C;&#x624B;&#x518A;</h1>
+<p>&#x6B61;&#x8FCE;&#x4F7F;&#x7528;&#x672C;&#x64CD;&#x4F5C;&#x624B;&#x518A;&#x3002;&#x672C;&#x624B;&#x518A;&#x6DB5;&#x84CB;&#x4E86;&#x81EA;&#x5B9A;&#x7FA9;&#x5100;&#x8868;&#x677F;&#x3001;&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;&#x3001;&#x667A;&#x80FD;&#x544A;&#x8B66;&#x3001;&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x6307;&#x5357;&#x3002;</p>
+<h2 id="&#x76EE;&#x9304;">&#x76EE;&#x9304;</h2>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li><a href="guide/&#x7522;&#x54C1;&#x6982;&#x8FF0;/README.md">&#x7522;&#x54C1;&#x6982;&#x8FF0;</a><ul>
+<li><a href="guide/&#x7522;&#x54C1;&#x6982;&#x8FF0;/&#x7522;&#x54C1;&#x7C21;&#x4ECB;.html">&#x7522;&#x54C1;&#x7C21;&#x4ECB;</a></li>
+<li><a href="guide/&#x7522;&#x54C1;&#x6982;&#x8FF0;/&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x548C;&#x7279;&#x8272;.html">&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x548C;&#x7279;&#x8272;</a></li>
+<li><a href="guide/&#x7522;&#x54C1;&#x6982;&#x8FF0;/&#x7522;&#x54C1;&#x67B6;&#x69CB;&#x5716;.html">&#x7522;&#x54C1;&#x67B6;&#x69CB;&#x5716;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/README.md">&#x5165;&#x9580;&#x6307;&#x5357;</a><ul>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x9700;&#x6C42;.html">&#x7CFB;&#x7D71;&#x9700;&#x6C42;</a><ul>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x786C;&#x9AD4;&#x914D;&#x7F6E;.html">&#x786C;&#x9AD4;&#x914D;&#x7F6E;</a></li>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x8EDF;&#x9AD4;&#x914D;&#x7F6E;.html">&#x8EDF;&#x9AD4;&#x914D;&#x7F6E;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x4E0B;&#x8F09;&#x8207;&#x5B89;&#x88DD;&#x6B65;&#x9A5F;.html">&#x4E0B;&#x8F09;&#x8207;&#x5B89;&#x88DD;&#x6B65;&#x9A5F;</a></li>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x521D;&#x59CB;&#x914D;&#x7F6E;&#x6307;&#x5357;.html">&#x521D;&#x59CB;&#x914D;&#x7F6E;&#x6307;&#x5357;</a></li>
+<li><a href="guide/&#x5165;&#x9580;&#x6307;&#x5357;/&#x767B;&#x5165;&#x7CFB;&#x7D71;.html">&#x767B;&#x5165;&#x7CFB;&#x7D71;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/README.md">&#x4F7F;&#x7528;&#x6307;&#x5357;</a><ul>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x6982;&#x89BD;.html">&#x7CFB;&#x7D71;&#x6982;&#x89BD;</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/README.md">&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;</a><ul>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Sysload.html">Sysload</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Diskload.html">Diskload</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Netload.html">Netload</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Memory.html">Memory</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/MultiCPU.html">MultiCPU</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Filesystem.html">Filesystem</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x7CFB;&#x7D71;&#x95DC;&#x806F;&#x5206;&#x6790;/Process.html">Process</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;/README.md">&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;</a><ul>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;/RawData.html">RawData</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;/&#x5B9A;&#x7FA9;KPI&#x6307;&#x6A19;.html">&#x5B9A;&#x7FA9; KPI &#x6307;&#x6A19;</a></li>
+<li><a href="guide/&#x4F7F;&#x7528;&#x6307;&#x5357;/&#x6307;&#x6A19;&#x81EA;&#x9078;&#x5340;/&#x5B9A;&#x7FA9;&#x5100;&#x8868;&#x677F;.html">&#x5B9A;&#x7FA9;&#x5100;&#x8868;&#x677F;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/README.md">&#x544A;&#x8B66;&#x7BA1;&#x7406;</a><ul>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x7576;&#x524D;&#x544A;&#x8B66;.html">&#x7576;&#x524D;&#x544A;&#x8B66;</a></li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x6B77;&#x53F2;&#x544A;&#x8B66;.html">&#x6B77;&#x53F2;&#x544A;&#x8B66;</a></li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x898F;&#x5247;&#x5217;&#x8868;.html">&#x898F;&#x5247;&#x5217;&#x8868;</a></li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x901A;&#x77E5;&#x7BA1;&#x9053;/README.md">&#x901A;&#x77E5;&#x7BA1;&#x9053;</a><ul>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x901A;&#x77E5;&#x7BA1;&#x9053;/Teams.html">Teams</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x544A;&#x8B66;&#x6291;&#x5236;.html">&#x544A;&#x8B66;&#x6291;&#x5236;</a></li>
+<li><a href="guide/&#x544A;&#x8B66;&#x7BA1;&#x7406;/&#x898F;&#x5247;&#x6A19;&#x7C64;.html">&#x898F;&#x5247;&#x6A19;&#x7C64;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x57FA;&#x672C;&#x8A2D;&#x5B9A;/README.md">&#x57FA;&#x672C;&#x8A2D;&#x5B9A;</a><ul>
+<li><a href="guide/&#x57FA;&#x672C;&#x8A2D;&#x5B9A;/&#x4F3A;&#x670D;&#x5668;&#x7FA4;&#x7D44;.html">&#x4F3A;&#x670D;&#x5668;&#x7FA4;&#x7D44;</a></li>
+<li><a href="guide/&#x57FA;&#x672C;&#x8A2D;&#x5B9A;/&#x9078;&#x55AE;&#x8A2D;&#x5B9A;.html">&#x9078;&#x55AE;&#x8A2D;&#x5B9A;</a></li>
+<li><a href="guide/&#x57FA;&#x672C;&#x8A2D;&#x5B9A;/&#x6548;&#x80FD;&#x6578;&#x64DA;&#x4E0A;&#x50B3;.html">&#x6548;&#x80FD;&#x6578;&#x64DA;&#x4E0A;&#x50B3;</a></li>
+<li><a href="guide/&#x57FA;&#x672C;&#x8A2D;&#x5B9A;/&#x4F3A;&#x670D;&#x5668;&#x6A19;&#x7C64;.html">&#x4F3A;&#x670D;&#x5668;&#x6A19;&#x7C64;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/README.md">&#x7BA1;&#x7406;&#x529F;&#x80FD;</a><ul>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/&#x7BA1;&#x7406;&#x6982;&#x89BD;.html">&#x7BA1;&#x7406;&#x6982;&#x89BD;</a></li>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/&#x7528;&#x6236;&#x548C;&#x7FA4;&#x7D44;&#x7BA1;&#x7406;.html">&#x7528;&#x6236;&#x548C;&#x7FA4;&#x7D44;&#x7BA1;&#x7406;</a></li>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/&#x5099;&#x4EFD;&#x8207;&#x9084;&#x539F;.html">&#x5099;&#x4EFD;&#x8207;&#x9084;&#x539F;</a></li>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/&#x5E38;&#x7528;CLI&#x547D;&#x4EE4;.html">&#x5E38;&#x7528;CLI&#x547D;&#x4EE4;</a></li>
+<li><a href="guide/&#x7BA1;&#x7406;&#x529F;&#x80FD;/&#x65E5;&#x8A8C;&#x5B58;&#x653E;&#x76F8;&#x95DC;&#x8DEF;&#x5F91;.html">&#x65E5;&#x8A8C;&#x5B58;&#x653E;&#x76F8;&#x95DC;&#x8DEF;&#x5F91;</a></li>
+</ul>
+</li>
+<li><a href="guide/&#x9AD8;&#x7D1A;&#x529F;&#x80FD;/README.md">&#x9AD8;&#x7D1A;&#x529F;&#x80FD;</a><ul>
+<li><a href="guide/&#x9AD8;&#x7D1A;&#x529F;&#x80FD;/&#x6574;&#x5408;Grafana&#x5100;&#x8868;&#x677F;.html">&#x6574;&#x5408;Grafana&#x5100;&#x8868;&#x677F;</a></li>
+</ul>
+</li>
 </ul>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+                                
+                                </section>
+                            
     </div>
-    <div class="copyright">
-        <p class="footer-entry">
-    ©2016-2020 Yelog
-</p>
-<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
-
-    </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
-<a class="" id="rocket" ></a>
-
-</div>
-
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close"  onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>Help us with donation</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
         </div>
     </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
-    </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
 
-</body>
-<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+            
+                
+                
+                <a href="guide/產品概述/README.md" class="navigation navigation-next navigation-unique" aria-label="Next page: 產品概述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
 
-<script src="/js/script.js?v=1.1.0" ></script>
-<script>
-    var img_resize = 'default';
-    function initArticle() {
-        /*渲染对应的表格样式*/
-        
-            $("#post .pjax table").addClass("green_title");
-        
-
-        /*渲染打赏样式*/
-        
-        $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
-            } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
-            }
-        })
-        
-
-        /*高亮代码块行号*/
-        
-
-        /*访问数量*/
-        
-        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
-        
-
-        /*代码高亮，行号对齐*/
-        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"產品概述","level":"1.2","depth":1,"path":"guide/產品概述/README.md","ref":"guide/產品概述/README.md","articles":[{"title":"產品簡介","level":"1.2.1","depth":2,"path":"guide/產品概述/產品簡介.md","ref":"guide/產品概述/產品簡介.md","articles":[]},{"title":"主要功能和特色","level":"1.2.2","depth":2,"path":"guide/產品概述/主要功能和特色.md","ref":"guide/產品概述/主要功能和特色.md","articles":[]},{"title":"產品架構圖","level":"1.2.3","depth":2,"path":"guide/產品概述/產品架構圖.md","ref":"guide/產品概述/產品架構圖.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2024-07-29T10:12:01.192Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-29T11:14:21.386Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
         
-    }
-
-    /*打赏页面隐藏与展示*/
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
     
-    function dashangToggle() {
-        $(".shang_box").fadeToggle();
-        $(".hide_box").fadeToggle();
-    }
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
     
-
-</script>
-
-<!--加入行号的高亮代码块样式-->
-
-<!--自定义样式设置-->
-<style>
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
     
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
     
-    .nav {
-        width: 542px;
-    }
-    .nav.fullscreen {
-        margin-left: -542px;
-    }
-    .nav-left {
-        width: 120px;
-    }
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
     
-    
-    @media screen and (max-width: 1468px) {
-        .nav {
-            width: 492px;
-        }
-        .nav.fullscreen {
-            margin-left: -492px;
-        }
-        .nav-left {
-            width: 100px;
-        }
-    }
-    
-    
-    @media screen and (max-width: 1024px) {
-        .nav {
-            width: 492px;
-            margin-left: -492px
-        }
-        .nav.fullscreen {
-            margin-left: 0;
-        }
-    }
-    
-    @media screen and (max-width: 426px) {
-        .nav {
-            width: 100%;
-        }
-        .nav-left {
-            width: 100%;
-        }
-    }
-    
-    
-    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
-        color: #383636;
-    }
-    
-    
-    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
-        color: #5e5e5f;
-    }
-    
-    
-    .nav-right nav a.hover, #local-search-result a.hover{
-        background-color: #e2e0e0;
-    }
-    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
 
-    /*列表样式*/
-    
-
-    /* 背景图样式 */
-    
-    
-
-
-    /*引用块样式*/
-    
-
-    /*文章列表背景图*/
-    
-
-    
-</style>
-
-
-
-
-
-
-
+    </body>
 </html>
+
